@@ -1,0 +1,125 @@
+body {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.btn-group {
+    margin: 0 auto;
+    display: table;
+}
+
+.buttonRound {
+    border-radius: 100%;
+    padding: 11px;
+    margin: 5px;
+    min-width: 45px; 
+    font-size: large;
+}
+
+.btn-group button {
+    background-color: #21A0DF; /* Green background */
+    border: 1px solid #6ad1ff; /* Green border */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #0072ad;
+    border: 1px solid #21A0DF;
+}
+
+/* Code for Voice Animation */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.head {
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #555;
+  margin-left: 20px;
+}
+.head i {
+  display: inline-block;
+  position: absolute;
+  margin-left: -30px;
+}
+.head span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #888;
+}
+
+#container {
+  display: table;
+  margin: 10px auto;
+  width: 95px;
+  height: 130px;
+  position: relative;
+}
+#container span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+#container span:first-child {
+  background: #C0C0C0;
+}
+
+/* Pulse animation from codepen.io/olam/pen/zcqea */
+.pulse {
+  margin:100px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #21A0DF;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(33,160,223, 0.5);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(106,209,255, 0.5);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(106,209,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(106,209,255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(106,209,255, 0.5);
+    box-shadow: 0 0 0 0 rgba(106,209,255, 0.5);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(106,209,255, 0);
+      box-shadow: 0 0 0 10px rgba(106,209,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(106,209,255, 0);
+      box-shadow: 0 0 0 0 rgba(106,209,255, 0);
+  }
+}

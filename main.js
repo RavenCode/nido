@@ -1,5 +1,6 @@
 const electron = require('electron')
 const say = require('say')
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -13,8 +14,9 @@ const url = require('url')
 let mainWindow
 
 function createWindow() {
+
     // Create the browser window.
-    mainWindow = new BrowserWindow({ width: 400, height: 400 })
+    mainWindow = new BrowserWindow({ width: 400, height: 310 })
 
     // and load the index.html of the app.
     mainWindow.loadURL(url.format({
@@ -23,7 +25,7 @@ function createWindow() {
         slashes: true
     }))
 
-    // Open the DevTools.
+    // Open the DevTools - Uncomment this to get the dev console
     // mainWindow.webContents.openDevTools()
 
     // Emitted when the window is closed.
@@ -33,6 +35,8 @@ function createWindow() {
         // when you should delete the corresponding element.
         mainWindow = null
     })
+
+    say.speak('Welcome to Bia!');
 }
 
 // This method will be called when Electron has finished
@@ -54,14 +58,6 @@ app.on('activate', function () {
     // dock icon is clicked and there are no other windows open.
     if (mainWindow === null) {
         createWindow()
-        // Fire a callback once the text has completed being spoken
-        say.speak("What's up, dog?", 'Good News', 1.0, (err) => {
-            if (err) {
-                return console.error(err)
-            }
-
-            console.log('Text has been spoken.')
-        })
     }
 })
 

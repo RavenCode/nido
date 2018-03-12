@@ -1,0 +1,45 @@
+{
+    "User": {
+        "voiceConfig": {
+            "defaultVoice": "Alex"
+        }
+    },
+    "env": {
+        "devConfig": {
+            "context": {
+                "customContext": {
+                    "appDirectory": "~/work",
+                    "mainApp": "/nido",
+                    "testAccount": {
+                        "username": "delete this",
+                        "password": "it's optional"
+                    },
+                    "launchDevEnvironment": {
+                        "text": "Launching dev environment",
+                        "command": "--yourcommandhere"
+                    },
+                    "startDatabase": {
+                        "text": "Starting sdb",
+                        "command": "--yourcommandhere"
+                    },
+                    "buildApp": {
+                        "text": "Building main app",
+                        "command": "blt --build"
+                    },
+                    "sync": {
+                        "text": "Syncing repo",
+                        "command": "git pull --yourcommandhere"
+                    },
+                    "startApp": {
+                        "text": "starting app",
+                        "command": "--yourcommandhere"
+                    },
+                    "stopApp": {
+                        "text": "stopping app",
+                        "command": "--yourcommandhere"
+                    }
+                }
+            }
+        }
+    }
+}
