@@ -1,0 +1,40 @@
+{
+  "name": "nido",
+  "version": "1.0.0",
+  "description": "The start of a beautiful dev vui written with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RavenCode/nido.git"
+  },
+  "keywords": [
+    "nido",
+    "vui",
+    "voice",
+    "ui",
+    "dev",
+    "ipa"
+  ],
+  "author": "Edmary Rosado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RavenCode/nido/issues"
+  },
+  "homepage": "https://github.com/RavenCode/nido#readme",
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "browserify": "^16.1.1",
+    "react": "^16.2.0",
+    "reactify": "^1.1.1",
+    "say": "^0.14.0",
+    "uglify-js": "^3.3.13",
+    "violet": "^0.9.0",
+    "watchify": "^3.11.0"
+  },
+  "devDependencies": {
+    "electron": "^1.8.3"
+  }
+}
